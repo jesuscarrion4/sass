@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.index {
+  background-image: url(../imagenes/candies-g8643387bd_1920.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "header header" "main main" "footer footer";
+}
+
+#cabeza {
+  position: fixed;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  background: #1f2e1f;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cabeza .headerLogo p a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5%;
+  width: 10em;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+#cabeza .headerLista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-right: 100px;
+}
+
+#cabeza .headerLista li {
+  border-radius: 10px;
+  margin: 5% 20px;
+}
+
+#cabeza .headerLista li a {
+  font-size: 20px;
+  display: block;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cabeza nav ul li a:hover {
+  color: #9fbaf5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: inline-block;
+}
+
+.intro .divMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro .titulo__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 3%;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.intro .imagenHome {
+  padding-right: 5%;
+  width: 30em;
+  height: 20em;
+}
+
+.intro .divC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.intro .imagenC {
+  padding-left: 3%;
+  width: 30em;
+  height: 20em;
+}
+
+.intro .complemento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  padding-right: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: #1f2e1f;
+  height: 100px;
+}
+
+footer .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  text-align: center;
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+  font-weight: bold;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer footer div a img {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=miestilo.css.map */

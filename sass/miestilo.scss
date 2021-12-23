@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+$colornav:rgb(31, 46, 31);
+
+.index {
+    background-image: url(../imagenes/candies-g8643387bd_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+#cabeza {  
+    position: fixed; 
+    width: 100%;
+    grid-area: header;
+    background: $colornav;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .headerLogo p a {
+        display: flex;
+        padding-left: 5%;
+        width: 10em;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+    }
+    .headerLista {
+        display: flex;
+        list-style: none;
+        margin-right: 100px;
+    }
+    .headerLista li {
+        border-radius: 10px;
+        margin: 5% 20px;
+    }
+    .headerLista li a {
+        font-size: 20px;
+        display:block;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    nav ul li a:hover{
+        color: rgb(159, 186, 245);
+        transition: 0.3s;
+    }
+
+}
+.intro {
+    grid-area: main;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: inline-block;
+    .divMain {
+        display: flex;
+        justify-content: space-between;
+    }
+    .titulo__1 {
+        display: flex;
+        width: 45%;
+        align-items: center;
+        text-align: center;
+        padding-left: 3%;
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .imagenHome {
+        padding-right: 5%;
+        width: 30em;
+        height: 20em;
+    }
+    .divC {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        
+    }
+    .imagenC {
+        padding-left: 3%;
+        width: 30em;
+        height: 20em;
+    }
+    .complemento {
+        display: flex;
+        width: 45%;
+        padding-right: 5%;
+        align-items: center;
+        text-align: center;
+        color:white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    background: $colornav;
+    height: 100px;
+    .contenedor {
+        display: flex;
+        display: block;
+        text-align: center;
+        width: 80%;
+        max-width: 100%;
+        margin: auto;
+        font-weight: bold;
+        color:white;   
+        align-items: center;
+    }
+    footer div a img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
